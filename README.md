@@ -11,7 +11,9 @@ Features
 
     Role-based access levels: OWNER, EDIT, DO, READ
 
-    Uses localStorage to store current user
+    Uses JWT tokens for secure authentication
+
+    Uses localStorage to store current user info
 
     API integration for backend operations
 
@@ -22,6 +24,8 @@ Tech Stack
     Backend: Java Spring Boot
 
     Database: MySQL
+
+    Authentication: JWT tokens
 
 Setup
 
@@ -41,6 +45,15 @@ Access Levels
 
     READ: View only
 
+API Endpoints
+
+    GET /api/project/all — get all projects
+
+    POST /api/task — create a task
+
+    DELETE /api/project/{id} — delete a project
+
+    PATCH /api/projectuser — update user access
 
 Contribution
 
